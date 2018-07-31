@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var arr=[12,16,18,27,87,12,16,45]
+		var max=0
+		
+		for(var i=0;i<arr.length;i++){
+			for(var j=i+1;j<arr.length;j++){
+				if(arr[i]==arr[j]){
+					arr.splice(j,1)
+				}
+			}
+		}
+		console.log(arr)
+	</script>
+</html>
